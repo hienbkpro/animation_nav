@@ -40,7 +40,6 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration: 0.7];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
-    NSLog(@"dfd");
     [UIView commitAnimations];
 }
 -(void)aMethod{

@@ -19,7 +19,11 @@
     if (self) {
         // Custom initialization
         self.view.backgroundColor = [UIColor grayColor];
-
+        int (^ sum_2)(int x,int y);
+        sum_2 =^int(int x,int y){
+            return x+y;
+        };
+        NSLog(@"sum 4 + 5 is : %d",sum_2(4,5));
     }
     return self;
 }
@@ -28,23 +32,25 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDuration: 0.7];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.navigationController.view cache:NO];
-    NSLog(@"dfd");
     [UIView commitAnimations];
 }
 -(void)viewDidLayoutSubviews{
     UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc]initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:self action:@selector(pop)];
-    self.navigationItem.leftBarButtonItem= barBtnItem;
-    NSLog(@"dd");
+    self.navigationItem.rightBarButtonItem= barBtnItem;
 }
 -(void)pop{
     [self.navigationController popViewControllerAnimated:YES];
     [self Effect_Transition];
-}- (void)viewDidLoad
+}
+
+- (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"view2";
+    [self ReadingData];
 	// Do any additional setup after loading the view.
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -52,4 +58,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)ReadData_plist{
+    
+    
+}
+
+-(NSArray *)ReadingData : (NSString *)pathForResourceName : (NSArray *)array : (NSString *)dictionaryValue{
+    // Find out the path of recipes.plist
+    NSString *path = [[NSBundle mainBundle] pathForResource:pathForResourceName ofType:@"plist"];
+    
+    // Load the file content and read the data into arrays
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    return  array = [dict objectForKey:dictionaryValue];
+}
+-(void)ReadingData{
+    NSArray *array = [[NSArray alloc]init];
+    array = [self ReadingData:@"content" :array :@"Age"];
+    NSLog(@"phan tu dau :%@",array[0]);
+    
+}
 @end

@@ -19,6 +19,7 @@
     vctl.view.backgroundColor = [UIColor redColor];
     [nav pushViewController:vctl animated:YES];
     //[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+
     return YES;
     
 }

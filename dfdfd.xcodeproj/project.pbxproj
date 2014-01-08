@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F47E8BD187D4F8000296B0A /* content.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F47E8BC187D4F8000296B0A /* content.plist */; };
 		0F924E35187A7F1A0034739E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F924E34187A7F1A0034739E /* Foundation.framework */; };
 		0F924E37187A7F1A0034739E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F924E36187A7F1A0034739E /* CoreGraphics.framework */; };
 		0F924E39187A7F1A0034739E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F924E38187A7F1A0034739E /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F47E8BC187D4F8000296B0A /* content.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = content.plist; sourceTree = "<group>"; };
 		0F924E31187A7F1A0034739E /* dfdfd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dfdfd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F924E34187A7F1A0034739E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F924E36187A7F1A0034739E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +123,7 @@
 				0F924E49187A7F1A0034739E /* ViewController.h */,
 				0FB8756C187AC3950023636F /* view2.h */,
 				0FB8756D187AC3950023636F /* view2.m */,
+				0F47E8BC187D4F8000296B0A /* content.plist */,
 				0F924E4A187A7F1A0034739E /* ViewController.m */,
 				0F924E4C187A7F1A0034739E /* Images.xcassets */,
 				0F924E3B187A7F1A0034739E /* Supporting Files */,
@@ -235,6 +238,7 @@
 			files = (
 				0F924E4D187A7F1A0034739E /* Images.xcassets in Resources */,
 				0F924E3F187A7F1A0034739E /* InfoPlist.strings in Resources */,
+				0F47E8BD187D4F8000296B0A /* content.plist in Resources */,
 				0F924E48187A7F1A0034739E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
